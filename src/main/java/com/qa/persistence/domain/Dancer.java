@@ -13,7 +13,7 @@ public class Dancer {
 	private String ageGroup;
 	private String gradeName;
 	private String location;
-	
+
 	public Dancer(int id, String name, String email, String ageGroup, String gradeName, String location) {
 		super();
 		this.id = id;
@@ -23,9 +23,9 @@ public class Dancer {
 		this.gradeName = gradeName;
 		this.location = location;
 	}
-	
+
 	public Dancer() {
-		
+
 	}
 
 	public int getId() {
@@ -75,6 +75,5 @@ public class Dancer {
 	public void setLocation(String location) {
 		this.location = location;
 	}
-	
-	
+
 }
