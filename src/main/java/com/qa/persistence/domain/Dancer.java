@@ -1,7 +1,12 @@
 package com.qa.persistence.domain;
 
+import javax.persistence.Entity;
+import javax.persistence.GeneratedValue;
+
+@Entity
 public class Dancer {
 
+	@GeneratedValue
 	private int id;
 	private String name;
 	private String email;
