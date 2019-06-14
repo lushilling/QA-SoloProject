@@ -15,8 +15,8 @@ public class DancerServiceImplemented implements DancerService {
 	}
 
 
-	public String getADacner(int id) {
-		return dancerRepository.getADacner(id);
+	public String getADancer(int id) {
+		return dancerRepository.getADancer(id);
 	}
 
 

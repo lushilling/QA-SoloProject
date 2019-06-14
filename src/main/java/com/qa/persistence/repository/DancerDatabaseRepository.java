@@ -25,7 +25,7 @@ public class DancerDatabaseRepository implements DancerRepository {
 		return util.getJSONForObject(dancer);
 	}
 
-	public String getADacner(int id) {
+	public String getADancer(int id) {
 		return util.getJSONForObject(manager.find(Dancer.class, id));
 	}
 

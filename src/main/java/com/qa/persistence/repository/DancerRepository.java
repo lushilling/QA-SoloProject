@@ -4,7 +4,7 @@ public interface DancerRepository {
 
 	String getAllDancers();
 
-	String getADacner(int id);
+	String getADancer(int id);
 
 	String addADancer(String dancer);
 
