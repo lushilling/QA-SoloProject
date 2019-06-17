@@ -1,9 +1,12 @@
 package com.qa.business;
 
+import javax.inject.Inject;
+
 import com.qa.persistence.repository.TeacherRepository;
 
 public class TeacherServiceImplmented implements TeacherService {
 
+	@Inject
 	TeacherRepository teacherRepository;
 
 	public String getAllTeachers() {
