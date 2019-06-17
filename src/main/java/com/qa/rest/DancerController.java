@@ -18,7 +18,7 @@ public class DancerController {
 	DancerService dancerService;
 	
 	@GET
-	@Path("/getAllDacners")
+	@Path("/getAllDancers")
 	@Produces({"application/json"})
 	public String getAllDancers() {
 		return dancerService.getAllDancers();
