@@ -14,32 +14,23 @@ import javax.persistence.OneToMany;
 public class Teacher {
 
 	@Id
-	@GeneratedValue
-	private int id;
-	private String name;
 	private String location;
+	
+	private String name;
+	
 
-	@OneToMany(cascade = CascadeType.PERSIST)
-	@JoinColumn(name = "Teacher_id")
-	Set<Dancer> dancerList = new HashSet<Dancer>();
+//	@OneToMany(cascade = CascadeType.PERSIST ) //Fetch type . EAGER
+//	@JoinColumn(name = "location")
+//	Set<Dancer> dancerList = new HashSet<Dancer>();
 
-	public Teacher(int id, String name, String location) {
+	public Teacher(String name, String location) {
 		super();
-		this.id = id;
 		this.name = name;
 		this.location = location;
 	}
 
 	public Teacher() {
 
-	}
-
-	public int getId() {
-		return id;
-	}
-
-	public void setId(int id) {
-		this.id = id;
 	}
 
 	public String getName() {
