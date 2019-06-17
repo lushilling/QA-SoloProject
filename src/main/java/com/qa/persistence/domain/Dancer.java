@@ -14,6 +14,7 @@ public class Dancer {
 	private String email;
 	private String ageGroup;
 	private String gradeName;
+	
 	private String location;
 
 	public Dancer(int id, String name, String email, String ageGroup, String gradeName, String location) {

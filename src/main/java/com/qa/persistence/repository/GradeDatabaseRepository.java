@@ -4,6 +4,7 @@ import java.util.Collection;
 
 import javax.inject.Inject;
 import javax.persistence.EntityManager;
+import javax.persistence.PersistenceContext;
 import javax.persistence.Query;
 
 import com.qa.persistence.domain.Grade;
@@ -11,6 +12,7 @@ import com.qa.utility.JSONUtil;
 
 public class GradeDatabaseRepository implements GradeRepository {
 
+	@PersistenceContext(unitName = "myPU")
 	EntityManager manager;
 
 	@Inject
