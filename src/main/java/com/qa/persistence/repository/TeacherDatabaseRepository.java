@@ -4,6 +4,7 @@ import java.util.Collection;
 
 import javax.inject.Inject;
 import javax.persistence.EntityManager;
+import javax.persistence.PersistenceContext;
 import javax.persistence.Query;
 import javax.transaction.Transactional;
 import javax.transaction.Transactional.TxType;
@@ -14,6 +15,7 @@ import com.qa.utility.JSONUtil;
 @Transactional(value = TxType.SUPPORTS)
 public class TeacherDatabaseRepository implements TeacherRepository {
 
+	@PersistenceContext(unitName = "myPU")
 	private EntityManager manager;
 
 	@Inject
